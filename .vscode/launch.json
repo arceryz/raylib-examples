@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "MyRun",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "preLaunchTask": "CMake: build",
+            "cwd": "${workspaceRoot}/${fileDirnameBasename}",
+            "program": "${workspaceRoot}/build/${fileDirnameBasename}.exe",
+            "console": "integratedTerminal"
+        }
+    ]
+}
