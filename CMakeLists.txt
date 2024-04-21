@@ -1,6 +1,4 @@
 cmake_minimum_required(VERSION 3.5.0)
-project(RaylibSingles VERSION 0.1.0 LANGUAGES C CXX)
-add_compile_options(-Wno-narrowing)
 
 include(FetchContent)
 set(RAYLIB_VERSION 5.0)

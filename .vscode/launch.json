@@ -7,7 +7,7 @@
             "request": "launch",
             "preLaunchTask": "CMake: build",
             "cwd": "${workspaceRoot}/${fileDirnameBasename}",
-            "program": "${workspaceRoot}/build/${fileDirnameBasename}.exe",
+            "program": "${workspaceRoot}/build/Debug/${fileDirnameBasename}.exe",
             "console": "integratedTerminal"
         }
     ]
