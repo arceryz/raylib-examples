@@ -1,9 +1,6 @@
 [submodule "Tesseract"]
 	path = Tesseract
 	url = https://github.com/arceryz/raylib-tesseract.git
-[submodule "Gupp"]
-	path = Gupp
-	url = https://github.com/arceryz/raylib-gpu-particles.git
 [submodule "GpuParticles"]
 	path = GpuParticles
 	url = https://github.com/arceryz/raylib-gpu-particles.git
