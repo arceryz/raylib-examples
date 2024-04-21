@@ -33,7 +33,7 @@ int main()
         BeginShaderMode(coolShader);
         DrawTexturePro(blankTex, (Rectangle){ 0, 0, 1, 1 }, 
             (Rectangle){ 0, 0, GetScreenWidth(), GetScreenHeight() }, 
-            (Vector2){}, 0, WHITE);
+            (Vector2){ 0, 0 }, 0, WHITE);
         EndShaderMode();
 
         GuiSlider((Rectangle){ 40, 10, 200, 10 }, "Iter", TextFormat("%d", curIter), &maxIterPercent, 0, 1);
