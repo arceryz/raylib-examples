@@ -73,7 +73,7 @@ int main()
     for (int i = 0; i < 3; i++) GenTextureMipmaps(&diTextures[i]);
 
     while(!WindowShouldClose()) {
-        numPointsF = Wrap(numPointsF+GetFrameTime()*speed, 0, maxPoints);
+        numPointsF = Wrap(numPointsF+GetFrameTime()*speed, 0, maxPoints-1);
         numPoints = (int)numPointsF;
         speed = baseSpeed * pow(2, speedFactor);
         float lastValue = 0;
