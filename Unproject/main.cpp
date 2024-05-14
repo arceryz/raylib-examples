@@ -32,12 +32,15 @@ Line3D GetCameraWorldRay(Vector3 ndc, Matrix view, Matrix proj)
     Line3D line;
 
     Quaternion worldQuat1 = QuaternionTransform({ ndc.x, ndc.y, -1, 1 }, invProjView);
-    Quaternion worldQuat2 = QuaternionTransform({ ndc.x, ndc.y, ndc.z, 1 }, invProjView);
+    Quaternion worldQuat2 = QuaternionTransform({ ndc.x, ndc.y, 1, 1 }, invProjView);
     worldQuat1 = QuaternionScale(worldQuat1, 1.0f/worldQuat1.w);
     worldQuat2 = QuaternionScale(worldQuat2, 1.0f/worldQuat2.w);
 
     line.start = { worldQuat1.x, worldQuat1.y, worldQuat1.z };
     line.end = { worldQuat2.x, worldQuat2.y, worldQuat2.z };
+
+    line.start = Vector3Unproject({ ndc.x, ndc.y, -1 }, proj, view);
+    line.end = Vector3Unproject({ ndc.x, ndc.y, 1 }, proj, view);
     return line;
 }
 
