@@ -10,6 +10,6 @@ Point On Polygon|Triangle Net| For the future
 ![](Demos/polygon.gif)|![](Demos/triangles.gif)| ...
 Shows how to compute whether a point is inside a **convex** polygon by counting angles. | Shows how to compute the perimeter of a patch of triangles. Used in [Mirai](https://github.com/arceryz/Mirai) to turn 3D model faces into polygons.
 
-This contains many of my smaller raylib projects. There are a mix of C/C++. The code is not cleaned much. Cleaned projects are given a repository of their own (see below).
+This contains many of my smaller raylib projects. There are a mix of C/C++. The code is not cleaned much.
 
 If you have questions on them you can always ask.
