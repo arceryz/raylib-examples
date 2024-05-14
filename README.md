@@ -1,4 +1,4 @@
-# raylib-singles
+# raylib-examples
 
 Newton Fractal|Unproject|Dense Injection
 -|-|-
